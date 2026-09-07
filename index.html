@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Love31 - Postres Artesanales</title>
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; background-color: #ffffff; color: #4a2c2c; padding: 15px; margin: 0; background-image: url('fondo.jpeg'); background-size: 350px auto; background-repeat: repeat;">
+<body style="font-family: Arial, sans-serif; text-align: center; background-color: #ffffff; color: #4a2c2c; padding: 10px; margin: 0; background-image: url('fondo.jpeg'); background-size: 350px auto; background-repeat: repeat;">
 
     <!-- BIENVENIDA CON TU LOGO OFICIAL -->
     <header style="background-color: rgba(255, 255, 255, 0.98); padding: 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(213, 47, 127, 0.15); max-width: 900px; margin: 0 auto 20px auto; border: 2px solid #f2bad3;">
@@ -123,7 +123,7 @@
             <div style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
                 <img src="https://unsplash.com" alt="Tartaleta" style="width: 100%; height: 110px; object-fit: cover; border-radius: 8px; margin-bottom: 5px;">
                 <h3 style="color: #d52f7f; margin: 3px 0; font-size: 14px;">Tartaleta de Fresa</h3>
-                <p style="font-size: 11px; color: #888; margin: 2px 0; height: 30px;">Porción individual con crema pastelera</p>
+                <p style="font-size: 10px; color: #888; margin: 2px 0; height: 30px;">Porción individual con crema pastelera</p>
                 <p style="font-weight: bold; color: #d52f7f; margin: 3px 0; font-size: 14px;">S/ 5.00 c/u</p>
                 <label style="font-weight: bold; font-size: 12px;">Cant: </label>
                 <input type="number" id="cantTartaleta" value="0" min="0" style="width: 40px; padding: 3px; border-radius: 5px; border: 1px solid #f2bad3; text-align: center;">
@@ -133,7 +133,7 @@
             <div style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
                 <img src="https://unsplash.com" alt="Tres Leches" style="width: 100%; height: 110px; object-fit: cover; border-radius: 8px; margin-bottom: 5px;">
                 <h3 style="color: #d52f7f; margin: 3px 0; font-size: 14px;">Tres Leches</h3>
-                <p style="font-size: 11px; color: #888; margin: 2px 0; height: 30px;">Porción ultra húmeda y fría</p>
+                <p style="font-size: 10px; color: #888; margin: 2px 0; height: 30px;">Porción ultra húmeda y fría</p>
                 <p style="font-weight: bold; color: #d52f7f; margin: 3px 0; font-size: 14px;">S/ 8.00 c/u</p>
                 <label style="font-weight: bold; font-size: 12px;">Cant: </label>
                 <input type="number" id="cantTresLeches" value="0" min="0" style="width: 40px; padding: 3px; border-radius: 5px; border: 1px solid #f2bad3; text-align: center;">
@@ -153,9 +153,10 @@
             </button>
             <br>
             
-            <button type="button" onclick="enviarPedido()" style="background-color: #25D366; color: white; border: none; padding: 10px 20px; font-size: 15px; font-weight: bold; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); cursor: pointer;">
+            <!-- ENLACE NATIVO REPARADO CON ID CORRECTO -->
+            <a id="btnWhatsApp" href="#" target="_blank" style="display: inline-block; background-color: #25D366; color: white; text-decoration: none; padding: 10px 20px; font-size: 15px; font-weight: bold; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); cursor: pointer;" onclick="enviarPedido(event)">
                 💬 Enviar Pedido por WhatsApp
-            </button>
+            </a>
 
             <h3 style="color: #4a2c2c; margin-top: 10px; font-size: 22px;">Total en Dulces: <span id="montoTotal" style="color: #d52f7f; font-weight: bold;">S/ 0.00</span></h3>
             <p style="font-size: 12px; color: #7a5a5a; font-style: italic; margin-top: -5px; font-weight: bold;">*Nota: El monto no incluye costos de delivery externos.</p>
@@ -191,10 +192,11 @@
             document.getElementById('montoTotal').innerText = "S/ " + resultadoFinal.toFixed(2);
         }
 
-        function enviarPedido() {
+        function enviarPedido(evento) {
             calcularTotal();
 
             if (resultadoFinal === 0) {
+                evento.preventDefault();
                 alert("Por favor, agrega al menos un postre a tu pedido antes de enviarlo. 🧁");
                 return;
             }
@@ -230,9 +232,14 @@
 
             let mensajeEncriptado = encodeURIComponent(mensaje);
             
-            // REDIRECCIÓN EN PESTAÑA APARTE COMPLETAMENTE INMUNE A BLOQUEOS LOCALES
-            window.open("https://whatsapp.com" + mensajeEncriptado, "_blank");
+            // Asigna el link directamente al atributo href del enlace nativo
+            document.getElementById('btnWhatsApp').href = "https://wa.me/51934557384?text=" + mensajeEncriptado;
         }
     </script>
 </body>
 </html>
+git add .
+git commit -m "Corregido enlace WhatsApp"
+git push
+
+
