@@ -7,7 +7,6 @@
 </head>
 <body style="font-family: Arial, sans-serif; text-align: center; background-color: #ffffff; color: #4a2c2c; padding: 15px; margin: 0; background-image: url('fondo.jpeg'); background-size: 350px auto; background-repeat: repeat;">
 
-    <!-- BIENVENIDA CON TU LOGO OFICIAL -->
     <header style="background-color: rgba(255, 255, 255, 0.98); padding: 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(213, 47, 127, 0.15); max-width: 900px; margin: 0 auto 20px auto; border: 2px solid #f2bad3;">
         <img src="logo.png" alt="Logo Love31" style="width: 110px; height: 110px; object-fit: cover; border-radius: 50%; border: 4px solid #d52f7f; background-color: white; margin-bottom: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
         <h1 style="color: #d52f7f; font-size: 32px; margin: 5px 0;">🧁 Bienvenidos a Love31 🧁</h1>
@@ -16,21 +15,12 @@
     </header>
 
     <main style="max-width: 950px; margin: 20px auto;">
-        <h2 style="color: #d52f7f; border-bottom: 3px solid #d52f7f; padding-bottom: 5px; background-color: rgba(255,255,255,0.98); display: inline-block; padding-left: 15px; padding-right: 15px; border-radius: 8px; font-size: 22px; margin-bottom: 15px;">Arma tu Pedido Especial ⭐</h2>
+        <h2 style="color: #d52f7f; border-bottom: 3px solid #d52f7f; padding-bottom: 5px; background-color: rgba(255,255,255,0.98); display: inline-block; padding-left: 15px; padding-right: 15px; border-radius: 8px; font-size: 22px; margin-bottom: 10px;">Arma tu Pedido Especial ⭐</h2>
         
-        <!-- BOTONES DE FILTRO (SEGMENTACIÓN) -->
-        <div style="margin-bottom: 25px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-            <button onclick="filtrarCategoria('todos')" id="btn-todos" style="background-color: #d52f7f; color: white; border: none; padding: 10px 20px; font-size: 15px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.3s;">✨ Ver Todo</button>
-            <button onclick="filtrarCategoria('tajadas')" id="btn-tajadas" style="background-color: #f2bad3; color: #4a2c2c; border: none; padding: 10px 20px; font-size: 15px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.3s;">🍰 Postres en Tajadas</button>
-            <button onclick="filtrarCategoria('enteras')" id="btn-enteras" style="background-color: #f2bad3; color: #4a2c2c; border: none; padding: 10px 20px; font-size: 15px; font-weight: bold; border-radius: 20px; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.3s;">🎂 Tortas Enteras</button>
-        </div>
-
-        <!-- CONTENEDOR DE PRODUCTOS -->
         <div style="display: flex; justify-content: center; flex-wrap: wrap; margin-top: 10px;">
-            <!-- === CATEGORÍA: TAJADAS / PORCIONES === -->
 
             <!-- 1. ALFAJOR -->
-            <div class="item-producto cat-tajadas" style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
+            <div style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
                 <img src="alfajor.jpg" alt="Alfajor" style="width: 100%; height: 110px; object-fit: cover; border-radius: 8px; margin-bottom: 5px;">
                 <h3 style="color: #d52f7f; margin: 3px 0; font-size: 14px;">Alfajor</h3>
                 <p style="font-size: 11px; color: #888; margin: 2px 0; height: 30px;">7 cm de diámetro</p>
@@ -40,7 +30,7 @@
             </div>
 
             <!-- 2. TORTA DE CHOCOLATE -->
-            <div class="item-producto cat-tajadas" style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
+            <div style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
                 <img src="torta.jpg" alt="Torta" style="width: 100%; height: 110px; object-fit: cover; border-radius: 8px; margin-bottom: 5px;">
                 <h3 style="color: #d52f7f; margin: 3px 0; font-size: 14px;">Torta de Chocolate</h3>
                 <p style="font-size: 11px; color: #888; margin: 2px 0; height: 30px;">Tajada (1/12 de molde 22cm)</p>
@@ -50,7 +40,7 @@
             </div>
 
             <!-- 3. CREMA VOLTEADA -->
-            <div class="item-producto cat-tajadas" style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
+            <div style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
                 <img src="crema.jpg" alt="Crema" style="width: 100%; height: 110px; object-fit: cover; border-radius: 8px; margin-bottom: 5px;">
                 <h3 style="color: #d52f7f; margin: 3px 0; font-size: 14px;">Crema Volteada</h3>
                 <p style="font-size: 11px; color: #888; margin: 2px 0; height: 30px;">Tajada (1/12 de molde 26cm)</p>
@@ -60,7 +50,7 @@
             </div>
 
             <!-- 4. CUPCAKES -->
-            <div class="item-producto cat-tajadas" style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
+            <div style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
                 <img src="cupcake.jpg" alt="Cupcakes" style="width: 100%; height: 110px; object-fit: cover; border-radius: 8px; margin-bottom: 5px;">
                 <h3 style="color: #d52f7f; margin: 3px 0; font-size: 14px;">Cupcakes</h3>
                 <p style="font-size: 11px; color: #888; margin: 2px 0; height: 30px;">Vainilla, chispas, manjar y lentejitas</p>
@@ -70,7 +60,7 @@
             </div>
 
             <!-- 5. KEKE CASERO -->
-            <div class="item-producto cat-tajadas" style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
+            <div style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
                 <img src="keke.jpg" alt="Keke" style="width: 100%; height: 110px; object-fit: cover; border-radius: 8px; margin-bottom: 5px;">
                 <h3 style="color: #d52f7f; margin: 3px 0; font-size: 14px;">Keke Casero</h3>
                 <p style="font-size: 11px; color: #888; margin: 2px 0; height: 30px;">Tajada (Vainilla, Choco, Naranja o Marmoleado)</p>
@@ -80,7 +70,7 @@
             </div>
 
             <!-- 6. CHEESECAKE -->
-            <div class="item-producto cat-tajadas" style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
+            <div style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
                 <img src="cheesecake.jpg" alt="Cheesecake" style="width: 100%; height: 110px; object-fit: cover; border-radius: 8px; margin-bottom: 5px;">
                 <h3 style="color: #d52f7f; margin: 3px 0; font-size: 14px;">Cheesecake</h3>
                 <p style="font-size: 11px; color: #888; margin: 2px 0; height: 30px;">Tajada (Fresa, Maracuyá o Saúco)</p>
@@ -90,7 +80,7 @@
             </div>
 
             <!-- 7. TORTA DE FRESA -->
-            <div class="item-producto cat-tajadas" style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
+            <div style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
                 <img src="torta-fresa.jpg" alt="Torta Fresa" style="width: 100%; height: 110px; object-fit: cover; border-radius: 8px; margin-bottom: 5px;">
                 <h3 style="color: #d52f7f; margin: 3px 0; font-size: 14px;">Torta de Fresa</h3>
                 <p style="font-size: 11px; color: #888; margin: 2px 0; height: 30px;">Tajada artesanal fresca</p>
@@ -100,7 +90,7 @@
             </div>
 
             <!-- 8. TORTA DE PECANAS -->
-            <div class="item-producto cat-tajadas" style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
+            <div style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
                 <img src="torta-pecanas.jpg" alt="Pecanas" style="width: 100%; height: 110px; object-fit: cover; border-radius: 8px; margin-bottom: 5px;">
                 <h3 style="color: #d52f7f; margin: 3px 0; font-size: 14px;">Torta de Pecanas</h3>
                 <p style="font-size: 11px; color: #888; margin: 2px 0; height: 30px;">Tajada con pecanas seleccionadas</p>
@@ -110,7 +100,7 @@
             </div>
 
             <!-- 9. PIE DE LIMÓN -->
-            <div class="item-producto cat-tajadas" style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
+            <div style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
                 <img src="pie-limon.jpg" alt="Limon" style="width: 100%; height: 110px; object-fit: cover; border-radius: 8px; margin-bottom: 5px;">
                 <h3 style="color: #d52f7f; margin: 3px 0; font-size: 14px;">Pie de Limón</h3>
                 <p style="font-size: 11px; color: #888; margin: 2px 0; height: 30px;">Tajada con merengue dorado</p>
@@ -120,30 +110,52 @@
             </div>
 
             <!-- 10. PIE DE MANZANA -->
-            <div class="item-producto cat-tajadas" style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
+            <div style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
                 <img src="pie-manzana.jpg" alt="Manzana" style="width: 100%; height: 110px; object-fit: cover; border-radius: 8px; margin-bottom: 5px;">
                 <h3 style="color: #d52f7f; margin: 3px 0; font-size: 14px;">Pie de Manzana</h3>
                 <p style="font-size: 11px; color: #888; margin: 2px 0; height: 30px;">Tajada tradicional con canela</p>
                 <p style="font-weight: bold; color: #d52f7f; margin: 3px 0; font-size: 14px;">S/ 4.00 c/u</p>
                 <label style="font-weight: bold; font-size: 12px;">Cant: </label>
+                <input type="number" id="cantPieManzana" value="0" min="0" style="width: 40px; padding: 3px; border-radius: 5px; border: 1px solid #f2bad3; text-align: center;">
+            </div>
+
+            <!-- 11. TARTALETA DE FRESA -->
+            <div style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
+                <img src="tartaleta.jpg" alt="Tartaleta" style="width: 100%; height: 110px; object-fit: cover; border-radius: 8px; margin-bottom: 5px;">
+                <h3 style="color: #d52f7f; margin: 3px 0; font-size: 14px;">Tartaleta de Fresa</h3>
+                <p style="font-size: 10px; color: #888; margin: 2px 0; height: 30px;">Porción individual con crema pastelera</p>
+                <p style="font-weight: bold; color: #d52f7f; margin: 3px 0; font-size: 14px;">S/ 5.00 c/u</p>
+                <label style="font-weight: bold; font-size: 12px;">Cant: </label>
+                <input type="number" id="cantTartaleta" value="0" min="0" style="width: 40px; padding: 3px; border-radius: 5px; border: 1px solid #f2bad3; text-align: center;">
+            </div>
+
+            <!-- 12. TRES LECHES -->
+            <div style="background: white; padding: 12px; border-radius: 12px; width: 180px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); margin: 8px; border: 1px solid #f2bad3;">
+                <img src="tres-leches.jpg" alt="Tres Leches" style="width: 100%; height: 110px; object-fit: cover; border-radius: 8px; margin-bottom: 5px;">
+                <h3 style="color: #d52f7f; margin: 3px 0; font-size: 14px;">Tres Leches</h3>
+                <p style="font-size: 10px; color: #888; margin: 2px 0; height: 30px;">Porción ultra húmeda y fría</p>
+                <p style="font-weight: bold; color: #d52f7f; margin: 3px 0; font-size: 14px;">S/ 8.00 c/u</p>
+                <label style="font-weight: bold; font-size: 12px;">Cant: </label>
+                <input type="number" id="cantTresLeches" value="0" min="0" style="width: 40px; padding: 3px; border-radius: 5px; border: 1px solid #f2bad3; text-align: center;">
+            </div>
+
+        </div>
+
         <!-- ENTREGA -->
         <div style="margin-top: 15px; background: rgba(255, 255, 255, 0.98); padding: 15px; border-radius: 10px; box-shadow: 0 4px 10px rgba(213, 47, 127, 0.1); max-width: 450px; margin-left: auto; margin-right: auto; text-align: left; border: 1px solid #f2bad3;">
             <h3 style="color: #d52f7f; margin-top: 0; text-align: center; font-size: 16px;">📍 Método de Envío en Lima</h3>
             <p style="font-size: 13px; text-align: center; color: #5c3a3a; font-weight: bold; margin: -5px 0 0 0;">El envío se coordina por interno al confirmar el pedido.</p>
         </div>
 
-        <!-- BOTONES DE CÁLCULO FIJOS ABAJO -->
-        <div style="margin-top: 20px; background-color: rgba(255, 255, 255, 0.98); padding: 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(213, 47, 127, 0.15); border: 2px solid #f2bad3; max-width: 500px; margin-left: auto; margin-right: auto;">
+        <!-- BOTONES DE CÁLCULO -->
+        <div style="margin-top: 20px; background-color: rgba(255, 255, 255, 0.98); padding: 20px; border-radius: 15px; box-shadow: 0 4px 15px rgba(213, 47, 127, 0.15); border: 2px solid #f2bad3; max-width: 500px; margin-left: auto; margin-right: auto; text-align: center;">
             <button type="button" onclick="calcularTotal()" style="background-color: #d52f7f; color: white; border: none; padding: 10px 20px; font-size: 15px; font-weight: bold; border-radius: 6px; cursor: pointer; box-shadow: 0 4px 6px rgba(213, 47, 127, 0.2); margin-bottom: 10px;">
                 🧮 Calcular Total de Postres
             </button>
             <br>
-            
-            <!-- ENLACE NATIVO DIRECTO PARA EVITAR EL REINICIO DE PÁGINA -->
-            <a id="btnWhatsApp" href="#" target="_blank" style="display: inline-block; background-color: #25D366; color: white; text-decoration: none; padding: 10px 20px; font-size: 15px; font-weight: bold; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); cursor: pointer;" onclick="enviarPedido(event)">
+            <button type="button" onclick="enviarPedido()" style="display: inline-block; background-color: #25D366; color: white; border: none; padding: 10px 20px; font-size: 15px; font-weight: bold; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); cursor: pointer;">
                 💬 Enviar Pedido por WhatsApp
-            </a>
-
+            </button>
             <h3 style="color: #4a2c2c; margin-top: 10px; font-size: 22px;">Total en Dulces: <span id="montoTotal" style="color: #d52f7f; font-weight: bold;">S/ 0.00</span></h3>
             <p style="font-size: 12px; color: #7a5a5a; font-style: italic; margin-top: -5px; font-weight: bold;">*Nota: El monto no incluye costos de delivery externos.</p>
         </div>
@@ -153,42 +165,8 @@
         <p style="margin: 0; font-weight: bold;">© 2026 Love31. Todos los derechos reservados. Marca registrada ante INDECOPI en Lima, Perú.</p>
     </footer>
 
-    <!-- LÓGICA DE PROGRAMACIÓN ASOCIADA A FILTROS Y WHATSAPP -->
     <script>
         let resultadoFinal = 0;
-
-        // Función para cambiar de categoría visualmente
-        function filtrarCategoria(categoria) {
-            let productos = document.getElementsByClassName('item-producto');
-            
-            // Ocultar o mostrar según la clase asignada
-            for (let i = 0; i < productos.length; i++) {
-                if (categoria === 'todos') {
-                    productos[i].style.display = 'block';
-                } else if (categoria === 'tajadas' && productos[i].classList.contains('cat-tajadas')) {
-                    productos[i].style.display = 'block';
-                } else if (categoria === 'enteras' && productos[i].classList.contains('cat-enteras')) {
-                    productos[i].style.display = 'block';
-                } else {
-                    productos[i].style.display = 'none';
-                }
-            }
-
-            // Cambiar estilos visuales de los botones de filtro
-            let botones = ['btn-todos', 'btn-tajadas', 'btn-enteras'];
-            botones.forEach(id => {
-                let btn = document.getElementById(id);
-                if (btn) {
-                    if (id === 'btn-' + categoria) {
-                        btn.style.backgroundColor = '#d52f7f';
-                        btn.style.color = 'white';
-                    } else {
-                        btn.style.backgroundColor = '#f2bad3';
-                        btn.style.color = '#4a2c2c';
-                    }
-                }
-            });
-        }
 
         function calcularTotal() {
             let p1 = parseInt(document.getElementById('cantAlfajor').value) || 0;
@@ -203,25 +181,18 @@
             let p10 = parseInt(document.getElementById('cantPieManzana').value) || 0;
             let p11 = parseInt(document.getElementById('cantTartaleta').value) || 0;
             let p12 = parseInt(document.getElementById('cantTresLeches').value) || 0;
-            
-            // Nuevas variables para las Tortas Enteras
-            let t1 = parseInt(document.getElementById('cantTortaEntera').value) || 0;
-            let t2 = parseInt(document.getElementById('cantCremaEntera').value) || 0;
-            let t3 = parseInt(document.getElementById('cantCheesecakeEntero').value) || 0;
 
-            resultadoFinal = (p1 * 2.00) + (p2 * 7.00) + (p3 * 7.00) + (p4 * 3.00) + 
-                             (p5 * 2.50) + (p6 * 8.00) + (p7 * 7.00) + (p8 * 7.00) + 
-                             (p9 * 8.00) + (p10 * 4.00) + (p11 * 5.00) + (p12 * 8.00) +
-                             (t1 * 70.00) + (t2 * 65.00) + (t3 * 75.00);
+            resultadoFinal = (p1 * 2.00) + (p2 * 7.00) + (p3 * 7.00) + (p4 * 3.00) +
+                             (p5 * 2.50) + (p6 * 8.00) + (p7 * 7.00) + (p8 * 7.00) +
+                             (p9 * 8.00) + (p10 * 4.00) + (p11 * 5.00) + (p12 * 8.00);
 
             document.getElementById('montoTotal').innerText = "S/ " + resultadoFinal.toFixed(2);
         }
 
-        function enviarPedido(evento) {
+        function enviarPedido() {
             calcularTotal();
 
             if (resultadoFinal === 0) {
-                evento.preventDefault();
                 alert("Por favor, agrega al menos un postre a tu pedido antes de enviarlo. 🧁");
                 return;
             }
@@ -238,37 +209,25 @@
             let p10 = document.getElementById('cantPieManzana').value;
             let p11 = document.getElementById('cantTartaleta').value;
             let p12 = document.getElementById('cantTresLeches').value;
-            
-            // Capturar cantidades de Tortas Enteras
-            let t1 = document.getElementById('cantTortaEntera').value;
-            let t2 = document.getElementById('cantCremaEntera').value;
-            let t3 = document.getElementById('cantCheesecakeEntero').value;
 
             let mensaje = "¡Hola Love31! ✨ Me gustaría hacer un pedido:\n\n";
-            
-            // Bloque de Porciones/Tajadas
             if (p1 > 0) mensaje += "• Alfajores: " + p1 + " und.\n";
-            if (p2 > 0) mensaje += "• Torta de Chocolate (Tajada): " + p2 + " porc.\n";
-            if (p3 > 0) mensaje += "• Crema Volteada (Tajada): " + p3 + " porc.\n";
+            if (p2 > 0) mensaje += "• Torta de Chocolate: " + p2 + " tajadas\n";
+            if (p3 > 0) mensaje += "• Crema Volteada: " + p3 + " tajadas\n";
             if (p4 > 0) mensaje += "• Cupcakes: " + p4 + " und.\n";
-            if (p5 > 0) mensaje += "• Keke Casero (Tajada): " + p5 + " porc.\n";
-            if (p6 > 0) mensaje += "• Cheesecake (Tajada): " + p6 + " porc.\n";
-            if (p7 > 0) mensaje += "• Torta de Fresa (Tajada): " + p7 + " porc.\n";
-            if (p8 > 0) mensaje += "• Torta de Pecanas (Tajada): " + p8 + " porc.\n";
-            if (p9 > 0) mensaje += "• Pie de Limón (Tajada): " + p9 + " porc.\n";
-            if (p10 > 0) mensaje += "• Pie de Manzana (Tajada): " + p10 + " porc.\n";
+            if (p5 > 0) mensaje += "• Keke Casero: " + p5 + " tajadas\n";
+            if (p6 > 0) mensaje += "• Cheesecake: " + p6 + " tajadas\n";
+            if (p7 > 0) mensaje += "• Torta de Fresa: " + p7 + " tajadas\n";
+            if (p8 > 0) mensaje += "• Torta de Pecanas: " + p8 + " tajadas\n";
+            if (p9 > 0) mensaje += "• Pie de Limón: " + p9 + " tajadas\n";
+            if (p10 > 0) mensaje += "• Pie de Manzana: " + p10 + " tajadas\n";
             if (p11 > 0) mensaje += "• Tartaleta de Fresa: " + p11 + " und.\n";
-            if (p12 > 0) mensaje += "• Tres Leches: " + p12 + " porc.\n";
-            
-            // Bloque de Tortas Enteras
-            if (t1 > 0) mensaje += "• Torta Chocolate Entera (22cm): " + t1 + " molde(s)\n";
-            if (t2 > 0) mensaje += "• Crema Volteada Entera (26cm): " + t2 + " molde(s)\n";
-            if (t3 > 0) mensaje += "• Cheesecake Entero: " + t3 + " molde(s)\n";
-            
+            if (p12 > 0) mensaje += "• Tres Leches: " + p12 + " porciones\n";
+
             mensaje += "\n💰 Total en dulces: S/ " + resultadoFinal.toFixed(2);
 
-           let mensajeEncriptado = encodeURIComponent(mensaje);
-            document.getElementById('btnWhatsApp').href = "https://wa.me/51934557384?text=" + mensajeEncriptado;
+            let mensajeEncriptado = encodeURIComponent(mensaje);
+            window.open("https://wa.me/51934557384?text=" + mensajeEncriptado, "_blank");
         }
     </script>
 </body>
